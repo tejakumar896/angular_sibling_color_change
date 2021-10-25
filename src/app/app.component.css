@@ -1,0 +1,14 @@
+.body-comp{
+    text-align: center;
+    border: 2px solid red;
+    background-color: brown;
+}
+.body-comp h3{
+    height: 4px;
+    color: white;
+}
+.main-page{
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,82 @@
+.main-tag{
+    border: 2px solid rgb(255, 255, 255);
+    width: 100vh;
+    height: 83vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    text-align: center;
+}
+.main-tag h3{
+    color:#fff;
+}
+.dropdown-class{
+    display: felx;
+}
+.dropdown-class .row{
+    display: flex;
+    justify-content: center;
+}
+#dropdown{
+    width: 40%;
+    border-radius: 25px;
+    border:2px solid rgb(255, 0, 0);
+    height: 35px;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 25px;
+}
+#dropdown:focus{
+    border: 2px red;
+}
+#dropdown option{
+    text-align: center;
+    width: 52px;
+    cursor: pointer;
+}
+.btn{
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(255, 115, 0);
+    color:white;
+}
+.fa-circle{
+    margin-top: 15px;
+}
+
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.yellow{
+    color:yellow;
+}
+.blue{
+    color:blue;
+}
+.black{
+    color:black;
+}
+.bg-green{
+    background-color:green;
+}
+.bg-red{
+    background-color:red;
+}
+.bg-yellow{
+    background-color:yellow;
+}
+.bg-blue{
+    background-color:blue;
+}
+.bg-black{
+    background-color:black;
+}

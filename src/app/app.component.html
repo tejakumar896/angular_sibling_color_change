@@ -1,21 +1,45 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="body-comp">
+  <h3>Siblings Components</h3>
+  <div class="main-page">
+<app-main class="app-main"></app-main>
+<app-data-share class="app-data-share"></app-data-share>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+</div>
+<!-- <div data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+  <div><h3>6</h3></div>
+</div> -->
 
-<router-outlet></router-outlet>
+<carousel [cellsToShow]="1">
+  <div class="carousel-cell">
+      <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg">
+</div>
+<div class="carousel-cell">
+  <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg">
+</div>
+<div class="carousel-cell">
+  <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg">
+</div>
+<div class="carousel-cell">
+  <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg">
+</div>
+</carousel>
+<br>
+
+<!-- <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" width="100%">
+  </div>
+</ngx-slick> -->
+
+<!-- <button (click)="addSlide()">Add</button>
+<button (click)="removeSlide()">Remove</button>
+<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+<button (click)="slickModal.unslick()">unslick</button> -->
